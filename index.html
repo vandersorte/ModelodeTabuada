@@ -15,18 +15,18 @@
     </header>
     <section>
         <div class="input_num">
-            Digite o Número:&nbsp;&nbsp;<input type="number" name="num" id="num" class="num" placeholder="0" min="1">
+            Digite o Número:&nbsp;&nbsp;<input id="num" class="num" type="number" name="num" placeholder="0" min="1">
         </div>
         <div class="input_operator">
             
             <label>
-                <input type="radio" name="operator" id="operator_plus" class="operator" checked="true">+</label>
+                <input id="operator_plus" class="operator" type="radio" name="operator" checked>+</label>
             <label>
-                <input type="radio" name="operator" id="minus_operator" class="operator">-</label>
+                <input id="minus_operator" class="operator" type="radio" name="operator" >-</label>
             <label>
-                <input type="radio" name="operator" id="multiplication_operator" class="operator">x</label>
+                <input id="multiplication_operator" class="operator" type="radio" name="operator" >x</label>
             <label>
-                <input type="radio" name="operator" id="division_operator" class="operator">÷</label>
+                <input id="division_operator" class="operator" type="radio" name="operator">÷</label>
         </div>
         <div class="button">
             <input type="button" value="Calcular" onclick="Calcular()" class="calculate_button">
