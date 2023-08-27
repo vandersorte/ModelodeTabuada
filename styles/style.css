@@ -50,15 +50,37 @@ body {
 }
 
 .calculate_button {
-    font-size: 20px;
-    padding: 4px;
-    font-weight: bold;
-    border-radius: 15px;
+    border-top: 1px solid #96d1f8;
+    background: #409cd6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2850b5), to(#409cd6));
+    background: -webkit-linear-gradient(top, #2850b5, #409cd6);
+    background: -moz-linear-gradient(top, #2850b5, #409cd6);
+    background: -ms-linear-gradient(top, #2850b5, #409cd6);
+    background: -o-linear-gradient(top, #2850b5, #409cd6);
+    padding: 9px 18px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
 }
 
 .calculate_button:hover {
-    color: turquoise;
-    box-shadow: 0 0 50px 5px turquoise;
+    border-top-color: #519dd6;
+    background: #519dd6;
+    color: #ccc;
+}
+
+.calculate_button:active {
+    border-top-color: #249dde;
+    background: #249dde;
 }
 
 .table_numbers {
