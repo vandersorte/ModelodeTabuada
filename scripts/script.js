@@ -15,17 +15,17 @@ function Calcular() {
         while (c <= 10) {
             if (plus.checked) {
                 let item = document.createElement("option")
-                item.text = `${n} + ${c} = ${n + c}`
+                item.text = `${c} + ${n} = ${n + c}`
                 tab.appendChild(item)
                 c++
             } else if (minus.checked) {
                 let item = document.createElement("option")
-                item.text = `${n} - ${c} = ${n - c}`
+                item.text = `${c} - ${n} = ${c - n}`
                 tab.appendChild(item)
                 c++
             } else if (multiplication.checked) {
                 let item = document.createElement("option")
-                item.text = `${n} x ${c} = ${n * c}`
+                item.text = `${c} x ${n} = ${n * c}`
                 tab.appendChild(item)
                 c++
             } else if (division.checked) {
