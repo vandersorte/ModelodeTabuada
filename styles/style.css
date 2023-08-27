@@ -9,11 +9,14 @@ body {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: sans-serif;
+    background-color: #81d4fa;
+    font-weight: bold;
 }
 
 .tittle {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     padding-top: 40px;
 }
 
@@ -49,43 +52,74 @@ body {
     padding-top: 15px;
 }
 
-.calculate_button {
-    border-top: 1px solid #96d1f8;
-    background: #409cd6;
-    background: -webkit-gradient(linear, left top, left bottom, from(#2850b5), to(#409cd6));
-    background: -webkit-linear-gradient(top, #2850b5, #409cd6);
-    background: -moz-linear-gradient(top, #2850b5, #409cd6);
-    background: -ms-linear-gradient(top, #2850b5, #409cd6);
-    background: -o-linear-gradient(top, #2850b5, #409cd6);
-    padding: 9px 18px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    border-radius: 40px;
-    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
-    color: white;
-    font-size: 16px;
-    font-family: Helvetica, Arial, Sans-Serif;
+.calculate_button:link,
+.calculate_button:visited {
+    text-transform: uppercase;
     text-decoration: none;
-    vertical-align: middle;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
 }
 
 .calculate_button:hover {
-    border-top-color: #519dd6;
-    background: #519dd6;
-    color: #ccc;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .calculate_button:active {
-    border-top-color: #249dde;
-    background: #249dde;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculate_button {
+    background-color: #fff;
+    color: #777;
+}
+
+.calculate_button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.calculate_button::after {
+    background-color: #fff;
+}
+
+.calculate_button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.calculate_button {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .table_numbers {
     padding-left: 45%;
-    padding-top: 11px;
+    padding-top: 57px;
     padding-bottom: 75px;
     font-size: 30px;
     width: 200px;
