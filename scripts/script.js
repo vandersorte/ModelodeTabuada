@@ -20,7 +20,7 @@ function Calcular() {
                 c++
             } else if (minus.checked) {
                 let item = document.createElement("option")
-                item.text = `${c} - ${n} = ${c - n}`
+                item.text = `${c} - ${n} = ${n - c}`
                 tab.appendChild(item)
                 c++
             } else if (multiplication.checked) {
