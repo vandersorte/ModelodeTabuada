@@ -20,12 +20,12 @@ function Calcular() {
                 c++
             } else if (minus.checked) {
                 let item = document.createElement("option")
-                item.text = `${c} - ${n} = ${n - c}`
+                item.text = `${c + n} - ${n} = ${c}`
                 tab.appendChild(item)
                 c++
             } else if (multiplication.checked) {
                 let item = document.createElement("option")
-                item.text = `${c} x ${n} = ${n * c}`
+                item.text = `${n} x ${c} = ${n * c}`
                 tab.appendChild(item)
                 c++
             } else if (division.checked) {
