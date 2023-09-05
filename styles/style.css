@@ -125,14 +125,3 @@ body {
     width: 200px;
     height: 200px;
 }
-
-.foo {
-    position: relative;
-    font-weight: bold;
-    color: gainsboro;
-    background: turquoise;
-    box-shadow: 0 0 20px 20px turquoise;
-    padding: 10px 0px 10px 20px;
-    text-align: center;
-    top: 150px;
-}
