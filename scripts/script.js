@@ -10,7 +10,7 @@ function Calcular() {
         window.alert("Erro, digite um número.")
     } else {
         let n = Number(num.value)
-        let c = 1
+        let c = 0
         tab.innerHTML = ""
         while (c <= 10) {
             if (plus.checked) {
